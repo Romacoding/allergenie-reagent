@@ -1,0 +1,23 @@
+{:source-paths ["src"]
+
+ :dependencies [[re-frame "1.1.1"]
+                [reagent "1.0.0-alpha2"]
+                [cljs-http "0.1.46"]
+                [binaryage/devtools "1.0.2"]
+                [nrepl "0.7.0"]]
+
+ :nrepl        {:port 3333}
+
+ :builds
+ {:app {:target :browser
+        :output-dir "public/js"
+        :asset-path "/js"
+
+        :modules
+        {:main
+         {:entries [allergenie.core]}}
+
+        :devtools
+        {:after-load allergenie.core/main
+         :http-root   "public"
+         :http-port   3000}}}}

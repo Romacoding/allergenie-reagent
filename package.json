@@ -1,0 +1,19 @@
+{
+  "name": "allergenie-reagent",
+  "description": "Your pollen, air quality and weather forecast",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "shadow-cljs": "^2.11.5"
+  },
+  "scripts": {
+    "dev": "npx shadow-cljs watch app",
+    "release": "npx shadow-cljs release app",
+    "clean": "rm -rf target && rm -rf public/js"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

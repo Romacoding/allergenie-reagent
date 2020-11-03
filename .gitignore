@@ -1,0 +1,10 @@
+unusedcode.cljs
+/node_modules
+/target
+/public/js
+.shadow-cljs
+.nrepl-port
+yarn.lock
+package-lock.json
+.calva
+.DS_Store
