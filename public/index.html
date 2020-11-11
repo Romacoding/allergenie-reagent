@@ -1,14 +1,27 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AllerGenie</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
   </head>
   <body>
     <div id="app">
     </div>
     <script src="/js/main.js"></script>
     <script>window.onload = function() { allergenie.core.main(); }</script>
+    <script>
+      (function() {
+          var burger = document.querySelector('.burger');
+          var nav = document.querySelector('#'+burger.dataset.target);
+ 
+          burger.addEventListener('click', function(){
+              burger.classList.toggle('is-active');
+              nav.classList.toggle('is-active');
+          });
+      })();
+     </script>
   </body>
 </html>
